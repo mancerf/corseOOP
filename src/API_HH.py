@@ -159,14 +159,13 @@ class HH_work():
         pass
 
     def vacancies_salary(self, salary_wont):
+        """ функция для преобразования зарплаты типо str в список содержащий тип int """
         salary = salary_wont.split('-')
-        print(salary)
         salary_list = []
         if len(salary) < 3 and salary[0] != '':
             salary_list.append(int(salary[0]))
             return salary_list
         elif len(salary) > 2 and salary[0] != '':
-            print(2)
             salary_list.append(int(salary[0]))
             salary_list.append(int(salary[2]))
             return salary_list
@@ -175,38 +174,66 @@ class HH_work():
             return salary_list
 
     def vacancies_sort_value(self, value):
+        """ функция сортировки по валюте зарплат в вакансиях"""
         data_sort_value = {}
         id_sort_value = []
         for i in range(len(self.data)):
-            if self.data[self.id[i]]['salary']['currency'] == None:
-                continue
-            elif self.data[self.id[i]]['salary']['currency'] == 'RUR':
+            if 'currency' in self.data[self.id[i]]['salary']:
+                if self.data[self.id[i]]['salary']['currency'] == value:
+                    id_sort_value.append(self.id[i])
+                    data_sort_value[self.id[i]] = self.data[self.id[i]]
+                elif self.data[self.id[i]]['salary']['currency'] == value:
+                    id_sort_value.append(self.id[i])
+                    data_sort_value[self.id[i]] = self.data[self.id[i]]
+                elif self.data[self.id[i]]['salary']['currency'] == value:
+                    id_sort_value.append(self.id[i])
+                    data_sort_value[self.id[i]] = self.data[self.id[i]]
+                else:
+                    continue
+            else:
                 id_sort_value.append(self.id[i])
                 data_sort_value[self.id[i]] = self.data[self.id[i]]
-            elif self.data[self.id[i]]['salary']['currency'] == 'KZT':
-                id_sort_value.append(self.id[i])
-                data_sort_value[self.id[i]] = self.data[self.id[i]]
-            elif self.data[self.id[i]]['salary']['currency'] == 'USD':
-                id_sort_value.append(self.id[i])
-                data_sort_value[self.id[i]] = self.data[self.id[i]]
+                data_sort_value[self.id[i]]['salary']['currency'] = 'не указано'
+
         self.id = id_sort_value
         self.data = data_sort_value
 
     def vacancies_sort_salary(self, salary):
+        """сортировка вакансий п1о зарплате """
         data_sort_salery = {}
         id_sort_salery = []
         for i in range(len(self.data)):
-            if self.data[self.id[i]]['salary'] == None:
-                continue
-            elif int(self.data[self.id[i]]['salary']['from']) ==0 and int(self.data[self.id[i]]['salary']['to']) == 0:
+
+            if self.data[self.id[i]]['salary'] is None:
                 id_sort_salery.append(self.id[i])
-                data_sort_salery[self.id[i]] = 0
-            elif int(self.data[self.id[i]]['salary']['from']) >= min(salary) and int(self.data[self.id[i]]['salary']['from']) != 0:
+                self.data[self.id[i]]['salary']['from'] = '0'
+                self.data[self.id[i]]['salary']['to'] = '0'
+                data_sort_salery[self.id[i]] = self.data[self.id[i]]
+
+            elif int(self.data[self.id[i]]['salary']['from']) == 0 and int(self.data[self.id[i]]['salary']['to']) == 0:
                 id_sort_salery.append(self.id[i])
                 data_sort_salery[self.id[i]] = self.data[self.id[i]]
+
+            elif int(self.data[self.id[i]]['salary']['from']) > 0 or int(self.data[self.id[i]]['salary']['to']) > 0:
+                if int(self.data[self.id[i]]['salary']['from']) >= min(salary) or int(self.data[self.id[i]]['salary']['to']) >= min(salary):
+                    if id_sort_salery == '':
+                        print(int(self.data[self.id[i]]['salary']['from']))
+                        id_sort_salery.append(self.id[i])
+                        data_sort_salery[self.id[i]] = self.data[self.id[i]]
+                    else:
+                        print('work')
+                        print(int(self.data[self.id[i]]['salary']['from']))
+                        for a in range(len(id_sort_salery)):
+                            if data_sort_salery[id_sort_salery[a]]['salary']['from'] >= self.data[self.id[i]]['salary']['from']:
+                                continue
+                            else:
+                                id_sort_salery.insert(a,self.id[i])
+                                data_sort_salery[self.id[i]] = self.data[self.id[i]]
+                                break
+
+
         self.id = id_sort_salery
         self.data = data_sort_salery
-        print(len(self.data))
 
     def vacancies_sort_city(self,city_find):
         """
@@ -217,7 +244,7 @@ class HH_work():
         id_sort_city =[]
         for i in range(len(self.data)):
             city = self.data[self.id[i]]['address'].split(',')[0]
-            if city_find == city:
+            if city_find == city or city == 'Не указано':
                 data_sort_city[self.id[i]] = self.data[self.id[i]]
                 id_sort_city.append(self.id[i])
         self.id = id_sort_city
@@ -229,16 +256,5 @@ class HH_work():
 
 
 
-r = HH()
-HH.vac_import(r,'Python', 20)
-test_save = HH_save(r.vacancies)
-e = HH_save.save_vacancies(test_save,'C:/ProgramData/corseOOP/data/vacancies.json')
-work = HH_work('C:/ProgramData/corseOOP/data/vacancies.json')
-HH_work.vacancies_open(work)
-w = '15 - 300000000'
-#a = HH_work.vacancies_sort_city(work, 'Ташкент')
-
-HH_work.vacancies_sort_salary(work,HH_work.vacancies_salary(work,w))
-print(work.data)
 
 
