@@ -1,0 +1,212 @@
+[
+  {
+    "id": "98062336",
+    "name": "Junior Backend Developer (Python)",
+    "salary": {
+      "from": 300,
+      "to": 0,
+      "currency": "USD",
+      "gross": true
+    },
+    "address": "Ташкент, 1-й проезд Заркент, 20/1"
+  },
+  {
+    "id": "98209966",
+    "name": "Программист-разработчик",
+    "salary": {
+      "from": 200000,
+      "to": 500000,
+      "currency": "KZT",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "96034351",
+    "name": "Junior Python разработчик",
+    "salary": {
+      "from": 50000,
+      "to": 0,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "94354526",
+    "name": "Стажер-разработчик Python",
+    "salary": {
+      "from": 100000,
+      "to": 150000,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98160686",
+    "name": "Data scientist",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "96507348",
+    "name": "Web-программист - стажер",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "97076411",
+    "name": "Стажер-разработчик",
+    "salary": {
+      "from": 100000,
+      "to": 150000,
+      "currency": "KZT",
+      "gross": false
+    },
+    "address": "Алматы, улица Кажымукана, 22/5"
+  },
+  {
+    "id": "96194079",
+    "name": "Junior Golang Developer",
+    "salary": {
+      "from": 75000,
+      "to": 0,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98140502",
+    "name": "Бэкенд-разработчик",
+    "salary": {
+      "from": 70000,
+      "to": 0,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98046521",
+    "name": "Программист Python",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98108927",
+    "name": "Младший (junior) программист Python",
+    "salary": {
+      "from": 37050,
+      "to": 78750,
+      "currency": "RUR",
+      "gross": true
+    },
+    "address": "Воронеж, улица Челюскинцев, 145"
+  },
+  {
+    "id": "98187706",
+    "name": "Python backend developer",
+    "salary": {
+      "from": 70000,
+      "to": 0,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "93657524",
+    "name": "Junior Python-разработчик в области AI/ML",
+    "salary": {
+      "from": 100000,
+      "to": 0,
+      "currency": "RUR",
+      "gross": true
+    },
+    "address": "Санкт-Петербург, Биржевая линия, 16"
+  },
+  {
+    "id": "96497148",
+    "name": "Главный специалист",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "92471522",
+    "name": "Junior Python Backend Developer",
+    "salary": {
+      "from": 0,
+      "to": 80000,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98013927",
+    "name": "Javascript Frontend Developer (Junior / Middle)",
+    "salary": {
+      "from": 0,
+      "to": 190000,
+      "currency": "RUR",
+      "gross": true
+    },
+    "address": "городской округ Домодедово, аэропорт Домодедово имени М.В. Ломоносова, 8"
+  },
+  {
+    "id": "97138886",
+    "name": "Python разработчик",
+    "salary": {
+      "from": 100000,
+      "to": 120000,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "97466453",
+    "name": "Junior Python Разработчик",
+    "salary": {
+      "from": 0,
+      "to": 10000,
+      "currency": "RUR",
+      "gross": false
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "97606086",
+    "name": "C++ developer to Berlin",
+    "salary": {
+      "from": 7500,
+      "to": 10834,
+      "currency": "EUR",
+      "gross": true
+    },
+    "address": "Берлин, Берлин, Ляйпцигер Штрассе, 51"
+  },
+  {
+    "id": "98157917",
+    "name": "Стажер ML Engineer",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  }
+]
