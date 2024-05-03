@@ -162,15 +162,15 @@ class HH_work():
         """ функция для преобразования зарплаты типо str в список содержащий тип int """
         salary = salary_wont.split('-')
         salary_list = []
-        if len(salary) < 3 and salary[0] != '':
+        if len(salary) < 2 and salary[0] != '':
             salary_list.append(int(salary[0]))
             return salary_list
-        elif len(salary) > 2 and salary[0] != '':
+        elif len(salary) == 2 and salary[0] != '':
             salary_list.append(int(salary[0]))
-            salary_list.append(int(salary[2]))
+            salary_list.append(int(salary[1]))
             return salary_list
         else:
-            salary_list.append(int(salary[2]))
+            salary_list.append(int(salary[1]))
             return salary_list
 
     def vacancies_sort_value(self, value):
@@ -221,8 +221,6 @@ class HH_work():
                         id_sort_salery.append(self.id[i])
                         data_sort_salery[self.id[i]] = self.data[self.id[i]]
                     else:
-                        print('work')
-                        print(int(self.data[self.id[i]]['salary']['from']))
                         for a in range(len(id_sort_salery)):
                             if data_sort_salery[id_sort_salery[a]]['salary']['from'] >= self.data[self.id[i]]['salary']['from']:
                                 continue
@@ -230,8 +228,6 @@ class HH_work():
                                 id_sort_salery.insert(a,self.id[i])
                                 data_sort_salery[self.id[i]] = self.data[self.id[i]]
                                 break
-
-
         self.id = id_sort_salery
         self.data = data_sort_salery
 

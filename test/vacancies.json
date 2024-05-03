@@ -11,31 +11,15 @@
     "address": "Не указано"
   },
   {
-    "id": "97150419",
-    "name": "Middle+ Frontend Developer (React)",
+    "id": "98196422",
+    "name": "Frontend Developer",
     "salary": {
-      "from": 0,
-      "to": 0
+      "from": 800,
+      "to": 1200,
+      "currency": "USD",
+      "gross": true
     },
-    "address": "Не указано"
-  },
-  {
-    "id": "98308781",
-    "name": "Junior React Developer",
-    "salary": {
-      "from": 0,
-      "to": 0
-    },
-    "address": "Не указано"
-  },
-  {
-    "id": "97150840",
-    "name": "Middle+ Frontend Developer (React)",
-    "salary": {
-      "from": 0,
-      "to": 0
-    },
-    "address": "Не указано"
+    "address": "Ташкент, улица Айбека, 22"
   },
   {
     "id": "96385623",
@@ -49,33 +33,33 @@
     "address": "Не указано"
   },
   {
-    "id": "98196422",
-    "name": "Frontend Developer",
+    "id": "98308781",
+    "name": "Junior React Developer",
     "salary": {
-      "from": 800,
-      "to": 1200,
+      "from": 0,
+      "to": 0
+    },
+    "address": "Не указано"
+  },
+  {
+    "id": "98323220",
+    "name": "Frontend разработчик (Reactjs)",
+    "salary": {
+      "from": 1000,
+      "to": 2500,
       "currency": "USD",
-      "gross": true
+      "gross": false
     },
-    "address": "Ташкент, улица Айбека, 22"
+    "address": "Ташкент, проспект Бунёдкор, 42"
   },
   {
-    "id": "98302988",
-    "name": "Разработчик front-end",
+    "id": "97150419",
+    "name": "Middle+ Frontend Developer (React)",
     "salary": {
       "from": 0,
       "to": 0
     },
-    "address": "Москва, Федеративный проспект, 15к4"
-  },
-  {
-    "id": "98330325",
-    "name": "FrontEnd разработчик",
-    "salary": {
-      "from": 0,
-      "to": 0
-    },
-    "address": "Долгопрудный"
+    "address": "Не указано"
   },
   {
     "id": "97008286",
@@ -89,6 +73,15 @@
     "address": "Ташкент, Малая кольцевая дорога, 7"
   },
   {
+    "id": "98302988",
+    "name": "Разработчик front-end",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Москва, Федеративный проспект, 15к4"
+  },
+  {
     "id": "98209966",
     "name": "Программист-разработчик",
     "salary": {
@@ -98,5 +91,14 @@
       "gross": false
     },
     "address": "Не указано"
+  },
+  {
+    "id": "98330325",
+    "name": "FrontEnd разработчик",
+    "salary": {
+      "from": 0,
+      "to": 0
+    },
+    "address": "Долгопрудный"
   }
 ]
