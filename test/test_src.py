@@ -76,6 +76,7 @@ def test_vacancies_sort_salary(work_open):
         assert work_open.data[work_open.id[i]]['salary']['from'] >= work_open.data[work_open.id[i + 1]]['salary']['from']
 
 
+
 def test_vacancies_sort_city(work_open):
     HH_work.vacancies_open(work_open)
     HH_work.vacancies_sort_city(work_open,'Москва')

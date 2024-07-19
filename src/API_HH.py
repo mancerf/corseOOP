@@ -231,6 +231,7 @@ class HH_work():
         self.id = id_sort_salery
         self.data = data_sort_salery
 
+
     def vacancies_sort_city(self,city_find):
         """
         метод выполняет сортировку вакансий по запросу пользователя

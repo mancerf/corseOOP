@@ -35,6 +35,7 @@ def user_interaction():
     HH_work.vacancies_sort_salary(data_work, HH_work.vacancies_salary(data_work,filter_range))
     if data_work.data =={}:
         print('по вышему запросу нет вакансий')
+
     else:
         for i in  range(len(data_work.data)):
             print(f'''
